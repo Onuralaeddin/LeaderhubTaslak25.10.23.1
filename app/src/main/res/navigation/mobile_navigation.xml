@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_slideshow">
+
+    <fragment
+        android:id="@+id/nav_transform"
+        android:name="com.example.leaderhubtaslak.ui.transform.TransformFragment"
+        android:label="@string/menu_transform"
+        tools:layout="@layout/fragment_transform" />
+    <fragment
+        android:id="@+id/nav_product"
+        android:name="com.example.leaderhubtaslak.ui.urunler.fragment_urunler"
+        android:label="Urunler"
+        tools:layout="@layout/fragment_urunler" />
+
+    <fragment
+        android:id="@+id/nav_reflow"
+        android:name="com.example.leaderhubtaslak.ui.reflow.ReflowFragment"
+        android:label="@string/menu_reflow"
+        tools:layout="@layout/fragment_reflow" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.leaderhubtaslak.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_maps"
+        android:name="com.example.leaderhubtaslak.ui.map.mapFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.leaderhubtaslak.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_nav_settings_to_nav_transform2"
+            app:destination="@id/nav_transform" />
+    </fragment>
+    <fragment
+        android:id="@+id/introductionFragment"
+        android:name="com.example.leaderhubtaslak.ui.introduction.introductionFragment"
+        android:label="fragment_introduction"
+        tools:layout="@layout/fragment_introduction" />
+
+</navigation>
